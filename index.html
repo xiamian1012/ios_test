@@ -15,7 +15,7 @@ body {
     background-color: #000000;
 }
 
-#app {
+#app1 {
     height: 2328px;
     width: 1920px;
 }
@@ -63,53 +63,6 @@ body {
     height: 480px;
 }
 
-#chart5 {
-    position: absolute;
-    top: 1530px;
-    left: 8px;
-    width: 650px;
-    height: 250px;
-}
-
-#chart6 {
-    position: absolute;
-    top: 1800px;
-    left: 8px;
-    width: 650px;
-    height: 250px;
-}
-
-#chart7 {
-    position: absolute;
-    top: 2070px;
-    left: 8px;
-    width: 650px;
-    height: 250px;
-}
-
-#chart8 {
-    position: absolute;
-    top: 1530px;
-    left: 1253px;
-    width: 650px;
-    height: 250px;
-}
-
-#chart9 {
-    position: absolute;
-    top: 1800px;
-    left: 1253px;
-    width: 650px;
-    height: 250px;
-}
-
-#chart10 {
-    position: absolute;
-    top: 2070px;
-    left: 1253px;
-    width: 650px;
-    height: 250px;
-}
 #chart11 {
     position: absolute;
     z-index:999;
@@ -215,7 +168,7 @@ input.el-input__inner {
 
 <body>
 
-<div id="app">
+<div id="app1">
     <div id="background">
         <img src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/icon/background5.jpg"/>
     </div>
@@ -228,29 +181,6 @@ input.el-input__inner {
 
 </div>
 <div id='app2'>
-
-
-
-    <el-form id="el-form2">
-        <el-form-item align="center" :popper-append-to-body="false">
-
-            <el-button round plain :type="vppv" @click="vppv_function">
-                <span style="color: #ffffff; font-size: 12px;">VPPV</span>
-            </el-button>
-            <el-button round plain :type="shangji" @click="shangji_function">
-                <span style="color: #ffffff; font-size: 12px;">商机</span>
-            </el-button>
-            <el-button round plain :type="liuliang" @click="liuliang_function">
-                <span style="color: #ffffff; font-size: 12px;">配流</span>
-            </el-button>
-        </el-form-item>
-    </el-form>
-    <div id="chart5"></div>
-    <div id="chart6"></div>
-    <div id="chart7"></div>
-    <div id="chart8"></div>
-    <div id="chart9"></div>
-    <div id="chart10"></div>
     <div id="chart11"></div>
 </div>
 
@@ -258,7 +188,7 @@ input.el-input__inner {
 
 <script src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/js/analysis_overview.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/js/analysis_globe_v2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/js/analysis_globe_v3.min.js"></script>
 
     <script type="text/javascript">
         // 一开始加载就适应屏幕的宽高
