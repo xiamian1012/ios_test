@@ -218,25 +218,7 @@ input.el-input__inner {
     <div id="background">
         <img src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/icon/background5.jpg"/>
     </div>
-    <el-form id="el-form1">
-        <el-form-item align="center" placeholder="请选择" :popper-append-to-body="false">
 
-            <el-button round plain :type="button90" @click="handle90">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">季度</span>
-            </el-button>
-            <el-button round plain :type="button37" @click="handle37">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">月度</span>
-            </el-button>
-
-        </el-form-item>
-    </el-form>
-
-    <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
-        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
-        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-            <span style="float: left;font-size: 13px">{{item.label}}</span>
-        </el-option>
-    </el-select>
 
     <div id="chart1"></div>
     <div id="chart2"></div>
