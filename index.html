@@ -761,8 +761,8 @@
         $(function() {
             //offsetWidth： 获取body元素对象的宽度，即offsetWidth=width+padding+border availWidth：返回当前屏幕宽度
 
-            var autowidth=document.body.clientWidth //window.screen.availWidth
-            var autoHeight=document.body.clientHeight//window.screen.availHeight
+            var autowidth=window.screen.availWidth //document.body.clientWidth //
+            var autoHeight=window.screen.availHeight //document.body.clientHeight//
             console.log(autowidth)
             console.log(autoHeight)
             console.log(document.body.clientWidth)
@@ -770,12 +770,12 @@
             var scale = autowidth/document.body.clientWidth;
             $("#container").css("height", autoHeight);
             $("#container").css("width", autowidth);       
-                 console.log(document.body.clientHeight)    
+            console.log($("#container").clientHeight)    
         });
 
 $(window).resize(function() {
-            var autowidth=document.body.clientWidth //window.screen.availWidth
-            var autoHeight=document.body.clientHeight//window.screen.availHeight
+            var autowidth=window.screen.availWidth //document.body.clientWidth //
+            var autoHeight=window.screen.availHeight //document.body.clientHeight//
              $("#container").css("height", autoHeight);
             $("#container").css("width", autowidth); 
         });
