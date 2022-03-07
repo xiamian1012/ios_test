@@ -44,15 +44,33 @@
     background-image: url("https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/icon/background5.jpg");
 }   
    
-#analysis_overview {
+@media(max-width:1200px)
+{#analysis_overview {
     height: 1500px;
     width: 1920px;
     overflow: hidden;
-}
+    display:none;
+ }
 #company_globe_analysis {
  position: relative;
     height: 828px;
     width: 1920px;
+    display:none; 
+}   
+}
+@media(min-width:1202px)
+{#analysis_overview {
+    height: 1500px;
+    width: 1920px;
+    overflow: hidden;
+    display:block;
+ }
+#company_globe_analysis {
+ position: relative;
+    height: 828px;
+    width: 1920px;
+    display:block; 
+}   
 }
 
 #background-company-analysis {
