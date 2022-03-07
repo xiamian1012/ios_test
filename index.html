@@ -375,63 +375,15 @@ input.el-input__inner {
          <div class="article-style"> 
           <p>An introduction to using Wowchemy’s Slides feature.</p> 
          </div> </a>
-        <a href="https://xiamian1012.github.io/combine"> 
-            <div  id="width"   class="img-hover-zoom"> 
-               <div id="demo1">
-                 
-<div id="analysis_all" style="width: 1920px;height: 2328px">
-<div id="analysis_overview">
-    <el-form id="el-form1">
-        <el-form-item align="center" placeholder="请选择" :popper-append-to-body="false">
-            <el-button round plain :type="button90" @click="handle90">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">季度</span>
-            </el-button>
-            <el-button round plain :type="button37" @click="handle37">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">月度</span>
-            </el-button>
-        </el-form-item>
-    </el-form>
-    <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
-        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
-        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-            <span style="float: left;font-size: 13px">{{item.label}}</span>
-        </el-option>
-    </el-select>
-  <div id= "company_analysis-chart1">  <div id="analysis_overview-chart1"></div> </div>
-  <div id= "company_analysis-chart2">  <div id="analysis_overview-chart2"></div> </div>
-  <div id= "company_analysis-chart3">  <div id="analysis_overview-chart3"></div> </div>
-  <div id= "company_analysis-chart4">  <div id="analysis_overview-chart4"></div> </div>
-</div>
-<div id='company_globe_analysis'>
-    <el-form id="el-form2">
-        <el-form-item align="center" :popper-append-to-body="false">
-            <el-button round plain :type="vppv" @click="vppv_function">
-                <span style="color: #ffffff; font-size: 12px;">VPPV</span>
-            </el-button>
-            <el-button round plain :type="shangji" @click="shangji_function">
-                <span style="color: #ffffff; font-size: 12px;">商机</span>
-            </el-button>
-            <el-button round plain :type="liuliang" @click="liuliang_function">
-                <span style="color: #ffffff; font-size: 12px;">配流</span>
-            </el-button>
-        </el-form-item>
-    </el-form>
-    <div id ="company_analysis-chart5"><div id="chart-six-one"></div></div>
-    <div id ="company_analysis-chart6"><div id="chart-six-two"></div></div>
-    <div id ="company_analysis-chart7"><div id="chart-six-three"></div></div>
-    <div id ="company_analysis-chart8"><div id="chart-six-four"></div></div>
-    <div id ="company_analysis-chart9"><div id="chart-six-five"></div></div>
-    <div id ="company_analysis-chart10"><div id="chart-six-six"></div></div>
-    <div id ="company_analysis-chart11"><div id="chart-company-globe"></div></div>
-</div>
-</div>
-               </div> 
+        <a href="https://xiamian1012.github.io/new_test"> 
+         <div  id="width"   class="img-hover-zoom"> 
+               <iframe id="demo1" src="https://xiamian1012.github.io/new_test" frameborder="0" style="transform-origin:0px 0px 0px;" class="article-banner" scrolling="no" alt="Example Slides" loading="lazy"></iframe> 
           <script>
         $(document).ready(function() {
           var ifr_width=$("#width").width();
           $("#demo1").css('width',ifr_width);
-          $("#demo1").css('height',ifr_width*2328/1920);   
-                    $("#analysis_all").css('zoom',ifr_width/1920);       
+          $("#demo1").css('height',ifr_width*924/1920);
+          $("#demo1").css('transform',"scale("+ifr_width/1920+")");
         });
           </script> 
    
