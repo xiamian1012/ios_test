@@ -38,12 +38,15 @@
 <script src="https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/js/echarts-liquidfill.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/echarts-gl/2.0.7/echarts-gl.min.js"></script>
   <style type="text/css">
-    #analysis_overview {
-    height: 2328px;
+#analysis_overview {
+    height: 1500px;
     width: 1920px;
+    overflow: hidden;
 }
 #company_globe_analysis {
-
+ position: relative;
+    height: 828px;
+    width: 1920px;
 }
 
 #background-company-analysis {
@@ -59,7 +62,7 @@
 
 #company_analysis-chart1 {
     position: relative;
-    top: 50px;
+    top: -50px;
     z-index: 2;
     width: 1900px;
     height: 400px;
@@ -67,7 +70,7 @@
 
 #company_analysis-chart2 {
     position: relative;
-    top: 540px;
+   top:40px;
     z-index: 2;
     width: 1920px;
     height: 400px;
@@ -75,14 +78,14 @@
 
 #company_analysis-chart3 {
     position: relative;
-    top: 980px;
+    top:80px;
     width: 939px;
     height: 480px;
 }
 
 #company_analysis-chart4 {
     position: relative;
-    top: 980px;
+    top:-400px;
     left: 970px;
     width: 950px;
     height: 480px;
@@ -90,7 +93,7 @@
 
 #company_analysis-chart5 {
     position: relative;
-    top: 1530px;
+    top:-25px;
     left: 8px;
     width: 650px;
     height: 250px;
@@ -98,7 +101,7 @@
 
 #company_analysis-chart6 {
     position: relative;
-    top: 1800px;
+    top: -15px;
     left: 8px;
     width: 650px;
     height: 250px;
@@ -106,7 +109,7 @@
 
 #company_analysis-chart7 {
     position: relative;
-    top: 2070px;
+    top: -5px;
     left: 8px;
     width: 650px;
     height: 250px;
@@ -114,7 +117,7 @@
 
 #company_analysis-chart8 {
     position: relative;
-    top: 1530px;
+    top: -775px;
     left: 1253px;
     width: 650px;
     height: 250px;
@@ -122,41 +125,41 @@
 
 #company_analysis-chart9 {
     position: relative;
-    top: 1800px;
+    top: -765px;
     left: 1253px;
     width: 650px;
     height: 250px;
 }
 
 #company_analysis-chart10 {
-    position: absolute;
-    top: 2070px;
+    position: relative;
+      top: -755px;
     left: 1253px;
     width: 650px;
     height: 250px;
 }
 #company_analysis-chart11 {
-    position: absolute;
-    top: 1646px;
-    left: 705px;
-    width: 510px;
-    height: 510px;
+    position: relative;
+      top: -1395px;  
+    left: 709px;
+    width: 500px;
+    height: 500px;
 }
 
 #el-form1 {
-    position: absolute;
+    position: relative;
     z-index: 4;
     width: 500px;
     left:707px;
-    top: 500px;
+    top:500px;
 }
 
 #el-form2 {
-    position: absolute;
+    position: relative;
     z-index: 4;
     width: 650px;
     left:1243px;
-    top: 1560px;
+    top: 75px;
 }
 
 .el-button.el-button--success {
@@ -223,7 +226,6 @@ input.el-input__inner {
     background-color: #2e333ae1;
     border: 1px solid #2e333ae1;
 }
-
   </style>
   <script type="application/ld+json">
         {
@@ -353,9 +355,11 @@ input.el-input__inner {
             <div  id="width"   class="img-hover-zoom"> 
                <div id="demo1">
                  
-<div id="ss" style="width: 1920px;height: 2328px">
+<div id="ss" style="width: 1920px;height: 2328px; background-image: url('https://cdn.jsdelivr.net/gh/xiamian1012/echarts@store/icon/background5.jpg')">
 <div id="analysis_overview">
-
+    <div id="background-company-analysis">
+        
+    </div>
     <el-form id="el-form1">
         <el-form-item align="center" placeholder="请选择" :popper-append-to-body="false">
 
@@ -370,17 +374,22 @@ input.el-input__inner {
     </el-form>
 
     <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
-        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
+        style="z-index:4;position:relative;left:700px;width:250px;top:920px;">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
             <span style="float: left;font-size: 13px">{{item.label}}</span>
         </el-option>
     </el-select>
+
   <div id= "company_analysis-chart1">  <div id="analysis_overview-chart1"></div> </div>
   <div id= "company_analysis-chart2">  <div id="analysis_overview-chart2"></div> </div>
   <div id= "company_analysis-chart3">  <div id="analysis_overview-chart3"></div> </div>
   <div id= "company_analysis-chart4">  <div id="analysis_overview-chart4"></div> </div>
+
 </div>
 <div id='company_globe_analysis'>
+
+
+
     <el-form id="el-form2">
         <el-form-item align="center" :popper-append-to-body="false">
 
@@ -403,6 +412,7 @@ input.el-input__inner {
     <div id ="company_analysis-chart10"><div id="chart-six-six"></div></div>
     <div id ="company_analysis-chart11"><div id="chart-company-globe"></div></div>
 </div>
+
 </div>
                </div> 
 
